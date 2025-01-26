@@ -23,13 +23,13 @@ struct SpotifyRecentsCell: View {
                 .fontWeight(.semibold)
                 .lineLimit(2)
         }
-        .padding(.trailing, 8)
+       // .padding(.trailing, 8)
         .frame(maxWidth: .infinity, alignment: .leading)
         .themeColors(isSelected: isSelected)
         .containerShape(RoundedRectangle(cornerRadius: 16))
         .cornerRadius(8)
-        .padding(.leading, 8)
-        .padding(.trailing, 8)
+      //  .padding(.leading, 8)
+       // .padding(.trailing, 8)
 
 
     }

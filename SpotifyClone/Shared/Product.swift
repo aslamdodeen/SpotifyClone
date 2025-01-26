@@ -19,7 +19,16 @@ struct Product: Codable, Identifiable, Equatable {
     let title, description: String
     let price, discountPercentage, rating: Double
     let stock: Int
+    let brand: String?
+    let category: String
     let images: [String]
     let thumbnail: String
+}
+
+struct ProductRow: Identifiable {
+    let id = UUID().uuidString
+    let title: String
+    let products: [Product]
+    
 }
 
