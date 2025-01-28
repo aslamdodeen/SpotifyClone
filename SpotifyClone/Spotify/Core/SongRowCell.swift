@@ -48,6 +48,9 @@ struct SongRowCell: View {
                 }
             
         }
+        .onTapGesture {
+            onCellressed?()
+        }
     }
 }
 
