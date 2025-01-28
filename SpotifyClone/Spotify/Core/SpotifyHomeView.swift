@@ -138,6 +138,8 @@ struct SpotifyHomeView: View {
             currentUser = try await DatabaseHelper().getUsers().first
             products = try await Array(DatabaseHelper().getproducts().prefix(8))
             
+            
+            
             var rows: [ProductRow] = []
             let allBrands = Set(products.map({$0.brand}))
             for brand in allBrands {
